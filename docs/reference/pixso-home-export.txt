@@ -1,0 +1,45 @@
+Pixso 原始生成结果（仅供追溯，图片路径已本地化；不参与 App 构建）。
+
+import 'package:flutter/material.dart';
+import 'package:flutter_ui/utils/pix_adapted_screen.dart';
+
+class Home extends StatefulWidget {
+
+  Home({super.key,});
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+
+
+  @override
+  void initState() {
+    super.initState();
+  
+  }
+
+
+  @override
+  Widget build(BuildContext context) {
+    ScreenUtil().rootSize = Size(0, 0);
+    return Scaffold(
+      backgroundColor: Colors.transparent,
+      body: MediaQuery.removePadding(
+        context: context,
+        removeTop: true,
+        removeBottom: true,
+        child: Container(
+            width: 375.w,
+            height: 812.h,
+            clipBehavior: Clip.hardEdge,
+            decoration: BoxDecoration(),
+            child: Image(
+              key: ValueKey("21:144"),
+              image: AssetImage("docs/reference/04-home.png"),),),
+      ),
+      
+      
+    );
+  }
+}
